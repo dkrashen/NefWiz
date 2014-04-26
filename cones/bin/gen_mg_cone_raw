@@ -1,0 +1,3 @@
+#!/bin/bash
+bin/genieq_mg $1 | bin/redund | bin/lrs | bin/rm_format | \
+bin/clearden

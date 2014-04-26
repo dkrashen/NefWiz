@@ -1,0 +1,11 @@
+#!/bin/bash
+genus=$1
+lines=$(cat $2 | linecount)
+echo "V-representation"
+echo "begin"
+echo $lines $(( ($genus / 2) - 1 )) rational
+cat $2 | bin/mg2flag $1
+echo "end"
+
+# $1 is the genus
+# $2 is the file of raw mgdata

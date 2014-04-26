@@ -1,0 +1,2 @@
+#!/bin/bash
+bin/genieq_flag $1 | bin/redund | bin/lrs | bin/rm_format | bin/clearden

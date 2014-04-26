@@ -1,0 +1,4 @@
+#!/bin/bash
+bin/gen_flag_cone_raw $1 | bin/flag2mg $1 | bin/reduce
+
+

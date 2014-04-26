@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "H-representation"
+echo "begin"
+filename=$1
+echo $(linecount < $filename) $(bin/linelength < $filename) rational
+cat $filename
+echo end
+

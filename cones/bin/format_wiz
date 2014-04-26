@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "g"
+echo $1
+echo
+echo s
+cat
+echo e

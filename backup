@@ -1,0 +1,22 @@
+#!/bin/bash
+
+d=$(date +%m-%d-%y)
+
+base_dir=$(pwd)
+target_dir=$base_dir/../backup/nefwiz-$d
+
+mkdir $target_dir
+cp -r $base_dir/* $target_dir/
+
+cd $target_dir
+
+make -s clean
+
+echo "nefwiz version $d" > version_notes
+echo >> version_notes
+
+cd ..
+
+tar -cf nefwiz-$d.tar nefwiz-$d
+gzip nefwiz-$d.tar
+rm -r -f nefwiz-$d

@@ -1,0 +1,5 @@
+#!/bin/bash
+bin/mg2flagcone_helper $1 $2 | bin/redund | bin/rm_format | bin/clearden
+
+# $1 is the genus
+# $2 is the file of raw mgdata

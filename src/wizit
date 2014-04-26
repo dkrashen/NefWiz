@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cat $1 | cones/bin/format_wiz $2 | filter e1 | filter e2 | filter e3 | filter e4 | filter e6 | filter e8 | filter f0
+

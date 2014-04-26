@@ -1,0 +1,4 @@
+#!/bin/bash
+cones/bin/gen_cone_script $@
+bash cone_script
+rm -f cone_script

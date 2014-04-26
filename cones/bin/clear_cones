@@ -1,0 +1,2 @@
+echo 'do you want to erase all generated cones (Y/N) ?'
+rm -f *_extremal-*

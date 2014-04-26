@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "V-representation"
+echo "begin"
+genus=$1
+
+lines=$(bin/gen_mg_cone_raw $genus | linecount)
+
+length=$(bin/gen_mg_cone_raw $genus | bin/linelength)
+echo $lines $length rational
+bin/gen_mg_cone_raw $1
+echo end
